@@ -28,7 +28,7 @@ public class SwipeAdapter extends RecyclerView.Adapter<SwipeAdapter.ListHolder>{
 
     @Override
     public void onBindViewHolder(ListHolder holder, int position) {
-        holder.tv.setText("第"+position+"个item");
+        holder.tv.setText("第"+datas.get(position)+"个item");
     }
 
     @Override

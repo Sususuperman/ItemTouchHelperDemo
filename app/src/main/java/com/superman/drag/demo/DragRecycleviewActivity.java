@@ -37,7 +37,6 @@ public class DragRecycleviewActivity extends AppCompatActivity {
             @Override
             public void onMove(int from, int to) {
                 Collections.swap(list, from, to);
-                adapter.setDatas(list);
                 //这个方法很关键，调换list的顺序
                 adapter.notifyItemMoved(from, to);
             }
